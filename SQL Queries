@@ -1,0 +1,20 @@
+SELECT 
+    category, 
+    COUNT(*) AS total_tickets, 
+    COUNTIF(sla_breached = TRUE) AS number_of_sla_breached,
+    ROUND((COUNTIF(sla_breached = TRUE) / COUNT(*)) * 100, 2) AS breach_percentage
+FROM `coursera-projects-487321.Customer_Tickets_Project.customer_service_tickets_project`
+GROUP BY 
+    category
+ORDER BY 
+    breach_percentage DESC;
+--------------------------------------------------------------------------------------
+
+SELECT 
+    category, 
+    AVG(resolution_time_hours) AS average_duration_of_ticket
+FROM `coursera-projects-487321.Customer_Tickets_Project.customer_service_tickets_project`
+GROUP BY 
+    category
+ORDER BY 
+    average_duration_of_ticket DESC;
