@@ -24,4 +24,4 @@ This project audits over 200,000 international customer service tickets to ident
 * **Action Plan:** Immediate action is required to scale global headcount and overhaul the tier-based priority routing logic, which currently fails to expedite high-priority international requests.
 
 ## Dashboard
-* [Link to Tableau Public Dashboard](#) *(Replace this with your actual Tableau Public link)*
+* (https://public.tableau.com/app/profile/andre.siopa/viz/GlobalSupportOperationsSLAResolutionBottleneckAudit/Dashboard1)
